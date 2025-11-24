@@ -1,0 +1,321 @@
+Build me a 3-page responsive website for a residential trash collection company with the following specifications:
+
+===================================
+COMPANY INFORMATION
+===================================
+
+Business Name: Down Home Disposal
+Location: Gordonsville, TN
+Phone: (931) 309-2245 (must be clickable tel: link everywhere it appears)
+Email: DHJunkRemovalandDemolition@gmail.com (must be clickable mailto: link everywhere it appears)
+Website URL: downhomedisposal.com
+Hours: Monday - Friday, 8:00 AM - 5:00 PM
+
+Service: Residential curbside trash pickup only
+Pricing: $27/month
+Includes: 96-gallon rolling cart provided at no extra charge
+Frequency: Weekly pickup
+Areas: Unincorporated and rural areas (NOT inside city limits)
+
+===================================
+DESIGN SPECIFICATIONS
+===================================
+
+Color Scheme (based on truck branding):
+- Primary Blue: #2563EB
+- Accent Red: #DC2626
+- Accent Yellow: #FBBF24
+- Background: White #FFFFFF
+- Text: Dark Gray #1F2937
+- Light Gray (backgrounds): #F3F4F6
+
+Typography:
+- Headlines: Bold, clean sans-serif (Inter or Poppins)
+- Body: Regular weight, highly readable
+
+Style:
+- Clean, professional, trustworthy
+- Mobile-first responsive design
+- Simple navigation
+- Large clickable buttons for phone/email
+- Friendly, local small-business feel
+
+===================================
+PAGE 1: HOME (index.html)
+===================================
+
+HEADER/NAVIGATION:
+- Logo or company name "Down Home Disposal" on left
+- Navigation links on right: Home | Service Areas | Privacy Policy
+- Phone number displayed in header (clickable)
+- Mobile: hamburger menu
+
+---
+
+HERO SECTION:
+- Large headline: "Reliable Weekly Trash Pickup"
+- Subheadline: "Serving rural Middle Tennessee with honest, dependable service"
+- Pricing callout: "$27/month – Cart Included"
+- Primary button: "Call Now (931) 309-2245" (clickable tel: link)
+- Secondary button: "View Service Areas" (links to service-areas.html)
+- Background: Could hold truck image or simple gradient
+
+---
+
+ABOUT SECTION:
+- Headline: "Your Local Trash Company"
+- Content:
+"Down Home Disposal is a locally owned residential trash collection service based in Gordonsville, Tennessee. We provide dependable weekly curbside pickup to families throughout Middle Tennessee's rural communities.
+
+As your neighbors, we take pride in showing up on time, every time. No contracts, no hidden fees – just honest service you can count on."
+
+---
+
+WHAT'S INCLUDED SECTION:
+- Headline: "Simple, Affordable Service"
+- Three feature cards:
+
+Card 1:
+- Icon: Trash cart
+- Title: "96-Gallon Cart Provided"
+- Text: "We supply a heavy-duty rolling cart at no extra charge"
+
+Card 2:
+- Icon: Calendar
+- Title: "Weekly Pickup"
+- Text: "Same day every week – reliable service you can count on"
+
+Card 3:
+- Icon: Dollar sign
+- Title: "$27/Month"
+- Text: "Affordable pricing with no contracts or hidden fees"
+
+---
+
+HOLIDAY SCHEDULE SECTION:
+- Headline: "Holiday Schedule"
+- Subtext: "We observe the following holidays. If your regular pickup falls on a holiday, service will be delayed by one day."
+
+Display these 4 holidays in a clean grid or list:
+- New Year's Day
+- Independence Day (July 4th)
+- Thanksgiving Day
+- Christmas Day
+
+- Note at bottom: "Questions about your pickup day? Give us a call!"
+
+---
+
+CONTACT / CALL TO ACTION SECTION:
+- Headline: "Ready to Get Started?"
+- Large phone number: (931) 309-2245 (clickable, styled as button)
+- Email: DHJunkRemovalandDemolition@gmail.com (clickable)
+- Hours: Monday – Friday, 8:00 AM – 5:00 PM
+- Text: "Call or email today to start your weekly trash service. No contracts required."
+
+---
+
+FOOTER:
+- Company name: Down Home Disposal
+- Location: Gordonsville, TN
+- Phone: (931) 309-2245 (clickable)
+- Email: DHJunkRemovalandDemolition@gmail.com (clickable)
+- Hours: Monday – Friday, 8 AM – 5 PM
+- Navigation links: Home | Service Areas | Privacy Policy
+- Copyright: "© 2025 Down Home Disposal. All rights reserved."
+- Credit line: "Website by Trash Joes"
+
+===================================
+PAGE 2: SERVICE AREAS (service-areas.html)
+===================================
+
+HEADER:
+- Same navigation as home page
+
+---
+
+HERO SECTION:
+- Headline: "Service Areas & Pickup Days"
+- Subheadline: "Weekly residential trash pickup throughout Middle Tennessee"
+
+---
+
+INTRO PARAGRAPH:
+"Down Home Disposal provides weekly curbside trash service to homes in the unincorporated and rural areas surrounding these Middle Tennessee communities. We do not service inside city limits where municipal contracts exist."
+
+---
+
+PICKUP SCHEDULE:
+Display as a clean, easy-to-read schedule (cards or table format):
+
+TUESDAY
+- Franklin (unincorporated areas)
+- Thompson's Station
+
+WEDNESDAY  
+- Spring Hill (unincorporated areas)
+- Columbia (unincorporated areas)
+
+THURSDAY
+- Pulaski
+
+---
+
+SERVICE DETAILS BOX:
+- Weekly curbside pickup
+- 96-gallon cart provided
+- $27/month
+- No contracts required
+
+---
+
+NOT SURE IF WE SERVICE YOUR AREA? SECTION:
+- Headline: "Don't See Your Town?"
+- Text: "If you live in a rural area near one of our routes, give us a call. We may be able to add you to our schedule."
+- Phone button: (931) 309-2245 (clickable)
+- Email link: DHJunkRemovalandDemolition@gmail.com (clickable)
+
+---
+
+FOOTER:
+- Same as home page
+
+===================================
+PAGE 3: PRIVACY POLICY (privacy.html)
+===================================
+
+HEADER:
+- Same navigation as home page
+
+---
+
+PAGE TITLE:
+- Headline: "Terms of Service & Privacy Policy"
+- Subheadline: "Our commitment to service and your privacy"
+
+---
+
+SECTION 1: PRIVACY POLICY
+
+Headline: "1. Privacy Policy"
+
+Subheading: "Collection and Use of Personal Data"
+"This Privacy Policy describes our policies and procedures regarding the collection, use, and disclosure of your information when you use our services. It also explains your privacy rights and how the law protects you.
+
+We use your personal data to provide and improve our service. By using our service, you agree to the collection and use of information in accordance with this Privacy Policy.
+
+Down Home Disposal maintains strict privacy policies, ensuring that the personal information of our customers is not sold, shared, rented, released, or traded to third parties."
+
+Subheading: "Tracking Technologies and Cookies"
+"We use cookies and similar tracking technologies to track activity on our website and store certain information. Examples include:
+- Essential Cookies: Provide core functionality such as navigation
+- Functionality Cookies: Store preferences for a personalized experience
+- Cookies Policy Acceptance Cookies: Track if users accepted cookie use"
+
+Subheading: "Retention and Deletion of Personal Data"
+"We will retain your personal data only for as long as necessary for the purposes outlined in this policy, including complying with legal obligations or resolving disputes."
+
+Subheading: "Security of Personal Data"
+"We implement industry-standard measures to protect your personal data, but no method of transmission or storage is entirely secure."
+
+Subheading: "Children's Privacy"
+"We do not knowingly collect data from anyone under 13 years old. If you believe we have collected data from a minor, contact us to remove it."
+
+Subheading: "Changes to This Privacy Policy"
+"We may update this policy periodically. Please check back for the latest version."
+
+---
+
+SECTION 2: TERMS AND CONDITIONS
+
+Headline: "2. Terms and Conditions"
+
+Subheading: "Agreement"
+"By accessing or using our services, you agree to these terms. If you disagree, you may not use the services."
+
+Subheading: "Services Provided"
+"Down Home Disposal offers residential waste collection services, including:
+- Weekly curbside trash pickup
+- 96-gallon rolling cart provided"
+
+Subheading: "Cancellation"
+"You may cancel services at any time with proper notice. Contact us by phone or email to cancel your service."
+
+Subheading: "Liability"
+"Down Home Disposal is not liable for service delays caused by circumstances beyond our control (weather, road conditions, vehicle breakdown, holidays) or damage caused by improper use of our services or equipment."
+
+Subheading: "Modifications to Services"
+"We reserve the right to modify services or terms. Notice will be provided for significant changes."
+
+---
+
+SECTION 3: SMS TERMS AND CONDITIONS
+
+Headline: "3. SMS Terms and Conditions"
+
+Subheading: "Program Description"
+"By opting into our SMS messaging service, you will receive updates about trash pickup schedules, service reminders, billing notices, holiday schedule changes, and occasional promotional offers."
+
+Subheading: "Cancellation of SMS Service"
+"You may cancel SMS services at any time by texting 'STOP' to the number provided. Upon sending 'STOP,' you will receive confirmation and no further SMS messages will be sent."
+
+Subheading: "Assistance with SMS Services"
+"Reply 'HELP' for assistance or contact us at:
+- Email: DHJunkRemovalandDemolition@gmail.com
+- Phone: (931) 309-2245"
+
+Subheading: "Message and Data Rates"
+"Standard message and data rates may apply. Message frequency varies. Contact your wireless carrier for details about your plan."
+
+Subheading: "Privacy"
+"For privacy-related inquiries, refer to our Privacy Policy above."
+
+Subheading: "Opt-In Disclosure"
+"By providing your phone number and signing up for texts, you consent to receive service-related text messages (e.g., pickup reminders, billing updates, holiday schedules) from Down Home Disposal at the number provided. Consent is not a condition of service. Message and data rates may apply. Message frequency varies. Unsubscribe at any time by replying STOP. Reply HELP for help."
+
+Subheading: "Modifications"
+"We may update or modify our SMS program and terms at any time. Users will be notified of significant changes, and continued use constitutes acceptance of the updated terms."
+
+---
+
+CONTACT SECTION:
+- Headline: "Questions About This Policy?"
+- Text: "Contact us:"
+- Phone: (931) 309-2245 (clickable)
+- Email: DHJunkRemovalandDemolition@gmail.com (clickable)
+- Location: Gordonsville, TN
+
+---
+
+FOOTER:
+- Same as other pages
+
+===================================
+TECHNICAL REQUIREMENTS
+===================================
+
+- Build with HTML, CSS, and JavaScript (no frameworks required)
+- Mobile-first responsive design (works on phones, tablets, desktop)
+- Fast loading, clean code
+- All phone numbers must use tel: links for click-to-call
+- All email addresses must use mailto: links
+- Consistent header and footer across all 3 pages
+- SEO-friendly meta tags (title, description) on each page
+- Semantic HTML structure
+- Accessible (proper alt tags, contrast, readable fonts)
+
+===================================
+META TAGS FOR SEO
+===================================
+
+Home Page:
+- Title: "Down Home Disposal | Residential Trash Pickup | Middle Tennessee"
+- Description: "Reliable weekly residential trash pickup in Franklin, Thompson's Station, Spring Hill, Columbia, and Pulaski. $27/month, cart included. Locally owned."
+
+Service Areas Page:
+- Title: "Service Areas & Pickup Schedule | Down Home Disposal"
+- Description: "Weekly trash pickup in Franklin, Thompson's Station, Spring Hill, Columbia, and Pulaski. See our pickup schedule and service areas."
+
+Privacy Page:
+- Title: "Privacy Policy & Terms | Down Home Disposal"
+- Description: "Privacy policy, terms of service, and SMS terms for Down Home Disposal residential trash service."

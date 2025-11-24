@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Sitemap: https://downhomedisposal.com/sitemap.xml
+
+# Block admin paths if they exist in future
+Disallow: /admin/
+Disallow: /api/
+
+# Crawl delay (optional - be polite to search engines)
+Crawl-delay: 1

@@ -12,9 +12,14 @@ export function Footer() {
             <h3 className="text-lg font-bold mb-4" data-testid="text-footer-company">
               Down Home Disposal
             </h3>
+            <p className="text-sm text-muted-foreground mb-3">
+              Residential Trash Pickup Serving Middle Tennessee
+            </p>
             <div className="flex items-start gap-2 text-sm text-muted-foreground mb-2">
               <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-              <span data-testid="text-footer-location">Gordonsville, TN</span>
+              <span data-testid="text-footer-location">
+                Gordonsville, Tennessee 38563
+              </span>
             </div>
             <div className="flex items-start gap-2 text-sm text-muted-foreground mb-2">
               <Clock className="h-4 w-4 mt-0.5 flex-shrink-0" />

@@ -4,11 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Trash2, Calendar, DollarSign, Phone, Mail } from "lucide-react";
 import truckImage from "@assets/Down_Home_disposal truck Pic_1764016401259.webp";
+import { LocalBusinessSchema } from "@/components/LocalBusinessSchema";
+import { FAQ } from "@/components/FAQ";
 
 export default function Home() {
   useEffect(() => {
-    const title = "Down Home Disposal | Residential Trash Pickup | Middle Tennessee";
-    const description = "Reliable weekly residential trash pickup in Franklin, Thompson's Station, Spring Hill, Columbia, and Pulaski. $27/month, cart included. Locally owned.";
+    const title = "Residential Trash Pickup Middle Tennessee | Down Home Disposal Franklin TN";
+    const description = "Affordable residential trash pickup service in Franklin, Thompson's Station, Spring Hill, Columbia, and Pulaski TN. Weekly curbside garbage collection $27/month with free 96-gallon cart. Serving rural Middle Tennessee.";
     const url = "https://downhomedisposal.com";
     
     document.title = title;
@@ -62,18 +64,25 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
+      <LocalBusinessSchema page="home" />
       <section
         className="relative min-h-[600px] flex items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${truckImage})`,
         }}
+        aria-label="Down Home Disposal truck providing residential trash pickup service in Middle Tennessee"
       >
+        <img 
+          src={truckImage} 
+          alt="Down Home Disposal garbage truck serving Franklin, Thompson's Station, Spring Hill, Columbia and Pulaski Tennessee residential trash pickup routes" 
+          className="sr-only"
+        />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-white">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4" data-testid="text-hero-headline">
-            Reliable Weekly Trash Pickup
+            Residential Trash Pickup Middle Tennessee
           </h1>
           <p className="text-xl md:text-2xl mb-6 text-white/90" data-testid="text-hero-subheadline">
-            Serving rural Middle Tennessee with honest, dependable service
+            Reliable weekly curbside garbage collection serving Franklin, Spring Hill, Columbia, Thompson's Station & Pulaski TN
           </p>
           <p className="text-3xl md:text-4xl font-bold mb-8 text-chart-3" data-testid="text-hero-pricing">
             $27/month – Cart Included
@@ -104,17 +113,17 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6" data-testid="text-about-headline">
-            Your Local Trash Company
+            Your Local Middle Tennessee Trash Service
           </h2>
           <div className="text-lg text-muted-foreground space-y-4">
             <p data-testid="text-about-paragraph-1">
-              Down Home Disposal is a locally owned residential trash collection service based in
-              Gordonsville, Tennessee. We provide dependable weekly curbside pickup to families
-              throughout Middle Tennessee's rural communities.
+              Down Home Disposal is a locally owned <strong>residential trash collection service</strong> based in
+              Gordonsville, Tennessee. We provide dependable <strong>weekly curbside garbage pickup</strong> to families
+              throughout Middle Tennessee's rural and unincorporated communities, including Franklin, Thompson's Station, Spring Hill, Columbia, and Pulaski.
             </p>
             <p data-testid="text-about-paragraph-2">
               As your neighbors, we take pride in showing up on time, every time. No contracts, no
-              hidden fees – just honest service you can count on.
+              hidden fees – just honest, affordable <strong>residential waste management</strong> you can count on. Our service includes a free 96-gallon rolling cart, perfect for weekly household trash collection.
             </p>
           </div>
         </div>
@@ -123,7 +132,7 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12" data-testid="text-features-headline">
-            Simple, Affordable Service
+            Affordable Residential Trash Pickup
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {features.map((feature, index) => (
@@ -167,10 +176,12 @@ export default function Home() {
         </div>
       </section>
 
+      <FAQ />
+
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8" data-testid="text-cta-headline">
-            Ready to Get Started?
+            Ready to Get Started with Residential Trash Pickup?
           </h2>
           <a href="tel:+19313092245" className="inline-block mb-6" data-testid="link-cta-phone">
             <Button
@@ -195,7 +206,7 @@ export default function Home() {
             </p>
             <p data-testid="text-cta-hours">Monday – Friday, 8:00 AM – 5:00 PM</p>
             <p className="text-primary-foreground/90 mt-4" data-testid="text-cta-description">
-              Call or email today to start your weekly trash service. No contracts required.
+              Call or email today to start affordable weekly trash service in Franklin, Spring Hill, Columbia, Thompson's Station, or Pulaski TN. No contracts required.
             </p>
           </div>
         </div>

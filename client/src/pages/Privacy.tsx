@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import { Phone, Mail } from "lucide-react";
 import truckImage from "@assets/Down_Home_disposal truck Pic_1764016401259.webp";
+import { LocalBusinessSchema } from "@/components/LocalBusinessSchema";
 
 export default function Privacy() {
   useEffect(() => {
-    const title = "Privacy Policy & Terms | Down Home Disposal";
-    const description = "Privacy policy, terms of service, and SMS terms for Down Home Disposal residential trash service.";
+    const title = "Privacy Policy & Terms of Service | Down Home Disposal Trash Service";
+    const description = "Privacy policy, terms of service, and SMS terms for Down Home Disposal residential trash pickup service in Middle Tennessee.";
     const url = "https://downhomedisposal.com/privacy";
     
     document.title = title;
@@ -34,13 +35,14 @@ export default function Privacy() {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <LocalBusinessSchema page="privacy" />
       <section className="py-16 md:py-24 bg-gradient-to-b from-primary/5 to-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4" data-testid="text-page-headline">
-            Terms of Service & Privacy Policy
+            Privacy Policy & Terms of Service
           </h1>
           <p className="text-xl text-muted-foreground" data-testid="text-page-subheadline">
-            Our commitment to service and your privacy
+            Down Home Disposal residential trash service commitment to privacy and service
           </p>
         </div>
       </section>

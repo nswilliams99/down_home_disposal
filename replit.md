@@ -96,3 +96,47 @@ Preferred communication style: Simple, everyday language.
 - PostCSS with Autoprefixer - CSS processing
 
 **Asset Management**: Static assets stored in `attached_assets` directory, including the truck image used in the hero section.
+
+## Recent Changes
+
+### SEO Optimization (November 24, 2025)
+
+Comprehensive SEO improvements implemented to help Down Home Disposal rank for residential trash pickup searches in Middle Tennessee cities:
+
+**Structured Data & Technical SEO**:
+- Added LocalBusiness JSON-LD schema with complete service areas, pricing ($27/month), geographic coordinates, opening hours, and service offerings
+- Implemented canonical tags on all pages via reusable helper function
+- Enhanced hero image alt text with location keywords
+- Created `robots.txt` with sitemap reference and crawl directives
+- Created `sitemap.xml` with proper page priorities and change frequencies
+
+**Keyword Optimization**:
+- Updated page titles with location-specific keywords (e.g., "Residential Trash Pickup Middle Tennessee | Down Home Disposal Franklin TN")
+- Enhanced meta descriptions with target keywords and clear CTAs
+- Optimized headings (H1, H2) throughout with service and location keywords
+- Strategic use of `<strong>` tags for keyword emphasis
+- Location-specific content in Service Areas page mentioning neighborhoods (Leiper's Fork, Arno, College Grove) and counties (Williamson, Maury, Giles)
+
+**Content Enhancements**:
+- Added comprehensive FAQ component (`FAQ.tsx`) with 8 questions targeting long-tail keywords like "residential trash pickup service areas", "trash cart size", "pickup schedule", etc.
+- Expanded Service Areas page with descriptive text for each pickup day/location
+- Enhanced CTAs with keyword-rich anchor text instead of generic "click here"
+- Added internal linking between pages with descriptive context
+
+**Local SEO**:
+- Enhanced NAP (Name, Address, Phone) visibility in footer with complete address including zip code (Gordonsville, Tennessee 38563)
+- Complete service area listings in schema: Franklin, Thompson's Station, Spring Hill, Columbia, Pulaski
+- Geographic keywords integrated naturally throughout content
+- County-level targeting (Williamson County, Maury County, Giles County)
+
+**Target Keywords**: The site is optimized to rank for:
+- "residential trash pickup [city] TN" (Franklin, Spring Hill, Columbia, Thompson's Station, Pulaski)
+- "trash service Franklin TN", "garbage collection Middle Tennessee"
+- "curbside trash pickup rural Tennessee"
+- "weekly trash service [city]"
+- "$27/month trash pickup Tennessee"
+
+**Components**:
+- `LocalBusinessSchema.tsx` - Reusable JSON-LD structured data component
+- `FAQ.tsx` - Accordion component with SEO-optimized questions and answers
+- All pages include meta tags helper functions for title, description, canonical, and Open Graph tags

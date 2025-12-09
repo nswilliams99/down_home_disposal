@@ -1,0 +1,37 @@
+10:46:51.931 Running build in Washington, D.C., USA (East) – iad1 (Turbo Build Machine)
+10:46:51.932 Build machine configuration: 30 cores, 60 GB
+10:46:51.940 Cloning github.com/nswilliams99/down_home_disposal (Branch: main, Commit: efbcf7e)
+10:46:51.941 Skipping build cache, deployment was triggered without cache.
+10:46:53.190 Cloning completed: 1.250s
+10:46:53.458 Running "vercel build"
+10:46:53.824 Vercel CLI 49.1.2
+10:46:54.077 WARNING: You should not upload the `.next` directory.
+10:46:54.083 Installing dependencies...
+10:46:59.947 
+10:46:59.948 added 166 packages in 6s
+10:46:59.948 
+10:46:59.948 42 packages are looking for funding
+10:46:59.948   run `npm fund` for details
+10:46:59.988 Detected Next.js version: 15.5.7
+10:46:59.991 Running "npm run build"
+10:47:00.084 
+10:47:00.085 > down-home-disposal@1.0.0 build
+10:47:00.085 > next build
+10:47:00.085 
+10:47:00.635    ▲ Next.js 15.5.7
+10:47:00.635 
+10:47:00.695    Creating an optimized production build ...
+10:47:07.207  ✓ Compiled successfully in 4.5s
+10:47:07.211    Linting and checking validity of types ...
+10:47:10.171 Failed to compile.
+10:47:10.171 
+10:47:10.171 ./client/src/App.tsx:1:31
+10:47:10.171 Type error: Cannot find module 'wouter' or its corresponding type declarations.
+10:47:10.171 
+10:47:10.171 [0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m { [33mSwitch[39m[33m,[39m [33mRoute[39m } [36mfrom[39m [32m"wouter"[39m[33m;[39m
+10:47:10.171  [90m   |[39m                               [31m[1m^[22m[39m
+10:47:10.171  [90m 2 |[39m [36mimport[39m { queryClient } [36mfrom[39m [32m"./lib/queryClient"[39m[33m;[39m
+10:47:10.171  [90m 3 |[39m [36mimport[39m { [33mQueryClientProvider[39m } [36mfrom[39m [32m"@tanstack/react-query"[39m[33m;[39m
+10:47:10.171  [90m 4 |[39m [36mimport[39m { [33mToaster[39m } [36mfrom[39m [32m"@/components/ui/toaster"[39m[33m;[39m[0m
+10:47:10.186 Next.js build worker exited with code: 1 and signal: null
+10:47:10.202 Error: Command "npm run build" exited with 1

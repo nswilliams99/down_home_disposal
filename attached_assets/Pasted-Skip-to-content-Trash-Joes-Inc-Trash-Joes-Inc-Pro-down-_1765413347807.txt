@@ -1,0 +1,131 @@
+Skip to content
+Trash Joes Inc
+Trash Joes Inc
+
+Pro
+
+down-home-disposal-tn
+
+GyuCuAxAF
+
+
+Find…
+F
+
+Deployment Details
+Build Failed
+The file "/vercel/path0/dist/public/routes-manifest.json" couldn't be found. This is often caused by a misconfiguration in your project.
+
+Created
+nate-8530 Avatar
+nate-8530
+2m ago
+Status
+Error
+Latest
+Duration
+34s
+2m ago
+Environment
+Production
+Domains
+down-home-disposal-tn-git-main-trash-joes-inc.vercel.app
+down-home-disposal-poyc35md2-trash-joes-inc.vercel.app
+Source
+main
+0a58b93
+Saved progress at the end of the loop
+
+Deployment Settings
+Fluid Compute
+Deployment Protection
+Skew Protection
+Cold Start Prevention
+Build Logs
+34s
+56 lines
+Find in logs
+CtrlF
+18:33:51.321 
+   Collecting page data ...
+18:33:52.325 
+   Generating static pages (0/7) ...
+18:33:52.907 
+   Generating static pages (1/7) 
+18:33:52.908 
+   Generating static pages (3/7) 
+18:33:52.908 
+   Generating static pages (5/7) 
+18:33:52.908 
+ ✓ Generating static pages (7/7)
+18:33:53.412 
+   Finalizing page optimization ...
+18:33:53.412 
+   Collecting build traces ...
+18:34:05.134 
+18:34:05.136 
+Route (app)                                 Size  First Load JS
+18:34:05.136 
+┌ ○ /                                    11.1 kB         124 kB
+18:34:05.136 
+├ ○ /_not-found                            994 B         103 kB
+18:34:05.136 
+├ ○ /privacy                               127 B         102 kB
+18:34:05.136 
+├ ○ /service-areas                         162 B         106 kB
+18:34:05.136 
+└ ○ /sitemap.xml                           127 B         102 kB
+18:34:05.136 
++ First Load JS shared by all             102 kB
+18:34:05.136 
+  ├ chunks/255-8746c083badce645.js       45.9 kB
+18:34:05.136 
+  ├ chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB
+18:34:05.137 
+  └ other shared chunks (total)          1.92 kB
+18:34:05.137 
+18:34:05.137 
+18:34:05.137 
+○  (Static)  prerendered as static content
+18:34:05.137 
+18:34:05.169 
+Error: The file "/vercel/path0/dist/public/routes-manifest.json" couldn't be found. This is often caused by a misconfiguration in your project.
+18:34:05.169 
+Learn More: https://err.sh/vercel/vercel/now-next-routes-manifest
+Deployment Summary
+Deployment Checks
+Assigning Custom Domains
+Runtime Logs
+
+View and debug runtime logs & errors
+
+Observability
+
+Monitor app health & performance
+
+Speed Insights
+
+Not Enabled
+Performance metrics from real users
+
+Web Analytics
+
+Not Enabled
+Analyze visitors & traffic in real-time
+
+Home
+Docs
+Knowledge Base
+Academy
+Help
+Contact
+All systems normal.
+
+Select a display theme:
+
+system
+
+light
+
+dark
+down-home-disposal-tn – Deployment Overview – Vercel

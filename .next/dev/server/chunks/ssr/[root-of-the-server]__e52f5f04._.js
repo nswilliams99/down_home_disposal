@@ -235,15 +235,16 @@ function LocalBusinessSchema() {
         priceRange: "$27/month",
         address: {
             "@type": "PostalAddress",
-            addressLocality: "Gordonsville",
+            streetAddress: "2027 Kimberly Dr",
+            addressLocality: "Mt Juliet",
             addressRegion: "TN",
-            postalCode: "38563",
+            postalCode: "37122",
             addressCountry: "US"
         },
         geo: {
             "@type": "GeoCoordinates",
-            latitude: 36.1784,
-            longitude: -86.0144
+            latitude: 36.2001,
+            longitude: -86.5186
         },
         openingHoursSpecification: {
             "@type": "OpeningHoursSpecification",
@@ -328,7 +329,7 @@ function LocalBusinessSchema() {
         }
     }, void 0, false, {
         fileName: "[project]/components/local-business-schema.tsx",
-        lineNumber: 96,
+        lineNumber: 97,
         columnNumber: 5
     }, this);
 }

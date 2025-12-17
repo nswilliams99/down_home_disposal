@@ -6,10 +6,10 @@ import { Phone, Mail, CheckCircle } from "lucide-react"
 import { LocalBusinessSchema } from "@/components/local-business-schema"
 
 export const metadata: Metadata = {
-  title: "Trash Pickup Service Areas Franklin TN | Middle Tennessee Garbage Collection Schedule",
+  title: "Service Areas | Franklin TN & Middle Tennessee",
   description: "Weekly residential trash pickup serving Franklin, Thompson's Station, Spring Hill, Columbia, and Pulaski TN. View our curbside garbage collection schedule by city and pickup day.",
   openGraph: {
-    title: "Trash Pickup Service Areas Franklin TN | Middle Tennessee Garbage Collection Schedule",
+    title: "Service Areas | Franklin TN & Middle Tennessee",
     description: "Weekly residential trash pickup serving Franklin, Thompson's Station, Spring Hill, Columbia, and Pulaski TN. View our curbside garbage collection schedule by city and pickup day.",
     url: "https://www.downhomedisposal.com/service-areas",
     images: [

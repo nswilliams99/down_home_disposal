@@ -39,6 +39,11 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    other: {
+      "msvalidate.01": "2916FEACAE73631176515AA69591D7B4",
+    },
+  },
 }
 
 export default function RootLayout({

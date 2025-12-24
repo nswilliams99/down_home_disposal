@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Franklin TN Garbage Pickup | Outside City Limits | Down Home Disposal',
+  title: 'Franklin TN Area Garbage Pickup | Rural Williamson County',
   description: 'Weekly garbage pickup for unincorporated Franklin TN areas. $27/month, 96-gallon cart included. Serving Leiper\'s Fork, Arno, College Grove & rural Williamson County.',
   openGraph: {
     title: 'Franklin TN Area Garbage Pickup | Down Home Disposal',
@@ -157,10 +157,10 @@ export default function FranklinGarbagePickupPage() {
               Email Us
             </a>
           </div>
-          <p className="mt-4 text-sm opacity-75">
-            <a href="/" className="underline hover:no-underline">
-              &larr; Back to Down Home Disposal
-            </a>
+          <p className="mt-6 text-sm opacity-75">
+            <a href="/" className="underline hover:no-underline">&larr; Back to Down Home Disposal</a>
+            {' | '}
+            <a href="/service-areas" className="underline hover:no-underline">View All Service Areas</a>
           </p>
         </div>
       </section>

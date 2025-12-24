@@ -995,12 +995,12 @@ body {
   text-underline-offset: 4px;
 }
 
-.opacity-90 {
-  opacity: .9;
-}
-
 .opacity-75 {
   opacity: .75;
+}
+
+.opacity-90 {
+  opacity: .9;
 }
 
 .shadow {

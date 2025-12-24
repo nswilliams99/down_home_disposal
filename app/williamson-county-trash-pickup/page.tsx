@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Williamson County Trash Pickup | Rural & Unincorporated Areas | Down Home Disposal',
+  title: 'Williamson County TN Trash Pickup | Unincorporated Areas',
   description: 'Weekly trash pickup for unincorporated Williamson County TN. $27/month, 96-gallon cart included. Serving rural areas outside Franklin & Thompson\'s Station city limits.',
   openGraph: {
     title: 'Williamson County TN Trash Pickup | Down Home Disposal',
@@ -163,10 +163,10 @@ export default function WilliamsonCountyTrashPickupPage() {
               Email Us
             </a>
           </div>
-          <p className="mt-4 text-sm opacity-75">
-            <a href="/" className="underline hover:no-underline">
-              &larr; Back to Down Home Disposal
-            </a>
+          <p className="mt-6 text-sm opacity-75">
+            <a href="/" className="underline hover:no-underline">&larr; Back to Down Home Disposal</a>
+            {' | '}
+            <a href="/service-areas" className="underline hover:no-underline">View All Service Areas</a>
           </p>
         </div>
       </section>

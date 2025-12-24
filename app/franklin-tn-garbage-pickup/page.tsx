@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Franklin TN Area Garbage Pickup | Rural Williamson County',
+  title: 'Franklin TN Area Garbage Pickup Service',
   description: 'Weekly garbage pickup for unincorporated Franklin TN areas. $27/month, 96-gallon cart included. Serving Leiper\'s Fork, Arno, College Grove & rural Williamson County.',
   openGraph: {
     title: 'Franklin TN Area Garbage Pickup | Down Home Disposal',

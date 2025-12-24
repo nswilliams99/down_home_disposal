@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Williamson County TN Trash Pickup | Unincorporated Areas',
+  title: 'Williamson County TN Trash Pickup',
   description: 'Weekly trash pickup for unincorporated Williamson County TN. $27/month, 96-gallon cart included. Serving rural areas outside Franklin & Thompson\'s Station city limits.',
   openGraph: {
     title: 'Williamson County TN Trash Pickup | Down Home Disposal',

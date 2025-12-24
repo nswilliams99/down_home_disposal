@@ -2,9 +2,12 @@
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
   "/apple-icon.png/route": "/apple-icon.png",
+  "/franklin-tn-garbage-pickup/page": "/franklin-tn-garbage-pickup",
   "/icon.png/route": "/icon.png",
   "/page": "/",
   "/privacy/page": "/privacy",
+  "/robots.txt/route": "/robots.txt",
   "/service-areas/page": "/service-areas",
-  "/sitemap.xml/route": "/sitemap.xml"
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/williamson-county-trash-pickup/page": "/williamson-county-trash-pickup"
 }

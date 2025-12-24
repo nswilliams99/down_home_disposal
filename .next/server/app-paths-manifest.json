@@ -2,9 +2,12 @@
   "/_global-error/page": "app/_global-error/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/apple-icon.png/route": "app/apple-icon.png/route.js",
+  "/franklin-tn-garbage-pickup/page": "app/franklin-tn-garbage-pickup/page.js",
   "/icon.png/route": "app/icon.png/route.js",
   "/page": "app/page.js",
   "/privacy/page": "app/privacy/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
   "/service-areas/page": "app/service-areas/page.js",
-  "/sitemap.xml/route": "app/sitemap.xml/route.js"
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/williamson-county-trash-pickup/page": "app/williamson-county-trash-pickup/page.js"
 }

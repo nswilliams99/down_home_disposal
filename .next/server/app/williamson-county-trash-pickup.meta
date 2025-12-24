@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/williamson-county-trash-pickup/layout,_N_T_/williamson-county-trash-pickup/page,_N_T_/williamson-county-trash-pickup"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/williamson-county-trash-pickup/__PAGE__",
+    "/williamson-county-trash-pickup",
+    "/_index",
+    "/_head"
+  ]
+}

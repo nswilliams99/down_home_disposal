@@ -82,6 +82,31 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/franklin-tn-garbage-pickup": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/franklin-tn-garbage-pickup",
+      "dataRoute": "/franklin-tn-garbage-pickup.rsc",
+      "prefetchDataRoute": null,
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/icon.png": {
       "initialHeaders": {
         "cache-control": "public, max-age=0, must-revalidate",
@@ -162,6 +187,36 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/robots.txt": {
+      "initialHeaders": {
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-type": "text/plain",
+        "x-next-cache-tags": "_N_T_/layout,_N_T_/robots.txt/layout,_N_T_/robots.txt/route,_N_T_/robots.txt"
+      },
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/robots.txt",
+      "dataRoute": null,
+      "prefetchDataRoute": null,
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/service-areas": {
       "experimentalBypassFor": [
         {
@@ -216,13 +271,38 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
+    },
+    "/williamson-county-trash-pickup": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/williamson-county-trash-pickup",
+      "dataRoute": "/williamson-county-trash-pickup.rsc",
+      "prefetchDataRoute": null,
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "4a30adeae6123e3fb1679b690605ce9d",
-    "previewModeSigningKey": "ae3f8b487459e7ee4fcef3544fe7d05a7b1bb3039d73260aff3f3445d9df96e8",
-    "previewModeEncryptionKey": "a2de0acf44fe3dff1a1faff8df18e2250db325942f12e35a8239258d62d87428"
+    "previewModeId": "71a4bc3fcc5ecf88a55dbaaa53b610cd",
+    "previewModeSigningKey": "7053ac5bafc513fcd9a3979a5deeea6a8543106dfaa08508efa93ce97186cbdf",
+    "previewModeEncryptionKey": "7a74a607ed898c393289baea1b573fbfd9acdc0ab4218c7cbe3bd474519abe08"
   }
 }

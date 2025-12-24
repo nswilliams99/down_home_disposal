@@ -36,6 +36,15 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 }
 
 
+// Validate ../../app/franklin-tn-garbage-pickup/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/franklin-tn-garbage-pickup">> = Specific
+  const handler = {} as typeof import("../../app/franklin-tn-garbage-pickup/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
 // Validate ../../app/page.tsx
 {
   type __IsExpected<Specific extends AppPageConfig<"/">> = Specific
@@ -58,6 +67,15 @@ type LayoutConfig<Route extends LayoutRoutes = LayoutRoutes> = {
 {
   type __IsExpected<Specific extends AppPageConfig<"/service-areas">> = Specific
   const handler = {} as typeof import("../../app/service-areas/page.js")
+  type __Check = __IsExpected<typeof handler>
+  // @ts-ignore
+  type __Unused = __Check
+}
+
+// Validate ../../app/williamson-county-trash-pickup/page.tsx
+{
+  type __IsExpected<Specific extends AppPageConfig<"/williamson-county-trash-pickup">> = Specific
+  const handler = {} as typeof import("../../app/williamson-county-trash-pickup/page.js")
   type __Check = __IsExpected<typeof handler>
   // @ts-ignore
   type __Unused = __Check

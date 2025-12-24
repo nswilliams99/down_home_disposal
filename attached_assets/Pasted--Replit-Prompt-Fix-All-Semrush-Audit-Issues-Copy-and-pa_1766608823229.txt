@@ -1,0 +1,320 @@
+# Replit Prompt: Fix All Semrush Audit Issues
+
+Copy and paste this into Replit:
+
+---
+
+**Task:** Fix all issues identified in Semrush site audit for Down Home Disposal.
+
+**Issues to fix:**
+1. Slow page load speed (all pages)
+2. Title elements too short (new location pages)
+3. Homepage missing from sitemap
+4. Homepage missing canonical tag
+5. Add internal links to improve site structure
+
+---
+
+## 1. Fix Page Load Speed
+
+### A. Optimize Images
+
+Check if any images are unoptimized. In any component using images, use Next.js Image component:
+
+```tsx
+import Image from 'next/image';
+
+// Replace this:
+<img src="/truck.jpg" alt="Trash truck" />
+
+// With this:
+<Image 
+  src="/truck.jpg" 
+  alt="Trash truck" 
+  width={800} 
+  height={600}
+  priority={false}
+  loading="lazy"
+/>
+```
+
+For hero images (above the fold), use `priority={true}` instead.
+
+### B. Lazy Load Third-Party Scripts
+
+**File:** `app/layout.tsx`
+
+If you have Google Analytics or other scripts, lazy load them:
+
+```tsx
+import Script from 'next/script';
+
+// In your layout, after </body> or at end of component:
+<Script
+  src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"
+  strategy="lazyOnload"
+/>
+<Script id="google-analytics" strategy="lazyOnload">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'YOUR-GA-ID');
+  `}
+</Script>
+```
+
+### C. Add Font Optimization
+
+**File:** `app/layout.tsx`
+
+Use Next.js font optimization:
+
+```tsx
+import { Inter } from 'next/font/google';
+
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+});
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en" className={inter.className}>
+      {/* ... */}
+    </html>
+  );
+}
+```
+
+### D. Check for Unused CSS/JS
+
+Run in terminal:
+```bash
+npm run build
+```
+
+Look for large chunks. If any page bundle is over 100KB, investigate what's being imported.
+
+---
+
+## 2. Fix Title Length (Extend Slightly)
+
+Semrush wants 50-60 characters. Current titles are ~45-50. Extend slightly:
+
+**File:** `app/franklin-tn-garbage-pickup/page.tsx`
+
+Change:
+```tsx
+title: 'Franklin TN Garbage Pickup | Outside City Limits | Down Home Disposal',
+```
+
+To:
+```tsx
+title: 'Franklin TN Area Garbage Pickup | Rural Williamson County | Down Home Disposal',
+```
+
+**File:** `app/williamson-county-trash-pickup/page.tsx`
+
+Change:
+```tsx
+title: 'Williamson County Trash Pickup | Rural & Unincorporated Areas | Down Home Disposal',
+```
+
+To:
+```tsx
+title: 'Williamson County TN Trash Pickup | Unincorporated Areas | Down Home Disposal',
+```
+
+---
+
+## 3. Fix Homepage Sitemap & Canonical
+
+**File:** `app/sitemap.ts`
+
+Replace entire file with:
+
+```typescript
+import { MetadataRoute } from 'next';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://www.downhomedisposal.com';
+  
+  return [
+    {
+      url: `${baseUrl}/`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/service-areas`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/franklin-tn-garbage-pickup`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/williamson-county-trash-pickup`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/privacy`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+  ];
+}
+```
+
+**File:** `app/page.tsx`
+
+Add canonical to homepage metadata:
+
+```typescript
+export const metadata: Metadata = {
+  title: 'Residential Trash Pickup Middle Tennessee | Down Home Disposal Franklin TN',
+  description: 'Affordable residential trash pickup service in Franklin, Thompson\'s Station, Spring Hill, Columbia, and Pulaski TN. Weekly curbside garbage collection $27/month with free 96-gallon cart.',
+  alternates: {
+    canonical: 'https://www.downhomedisposal.com/',
+  },
+  // ... rest of metadata
+};
+```
+
+---
+
+## 4. Add Internal Links (Improve Structure)
+
+### A. Service Areas Page Links
+
+**File:** `app/service-areas/page.tsx` (or its component)
+
+In the Tuesday section, after listing Franklin areas, add:
+
+```tsx
+<a 
+  href="/franklin-tn-garbage-pickup" 
+  className="inline-block mt-3 text-green-600 dark:text-green-400 hover:underline font-medium"
+>
+  View Franklin Area Details →
+</a>
+```
+
+Add a County section after the schedule:
+
+```tsx
+<section className="mt-12">
+  <h2 className="text-2xl font-bold mb-6">Service by County</h2>
+  <div className="grid md:grid-cols-2 gap-6">
+    <a 
+      href="/williamson-county-trash-pickup"
+      className="block p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+    >
+      <h3 className="text-xl font-semibold mb-2">Williamson County</h3>
+      <p className="text-gray-600 dark:text-gray-300 mb-2">
+        Serving Leiper's Fork, Arno, College Grove, and unincorporated areas.
+      </p>
+      <span className="text-green-600 dark:text-green-400 font-medium">View Details →</span>
+    </a>
+    <a 
+      href="/franklin-tn-garbage-pickup"
+      className="block p-6 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+    >
+      <h3 className="text-xl font-semibold mb-2">Franklin TN Area</h3>
+      <p className="text-gray-600 dark:text-gray-300 mb-2">
+        Tuesday pickup for rural Franklin and surrounding communities.
+      </p>
+      <span className="text-green-600 dark:text-green-400 font-medium">View Details →</span>
+    </a>
+  </div>
+</section>
+```
+
+### B. Add Back Links to Homepage
+
+**File:** `app/franklin-tn-garbage-pickup/page.tsx`
+
+In the bottom CTA section, add after the buttons:
+
+```tsx
+<p className="mt-6 text-sm opacity-75">
+  <a href="/" className="underline hover:no-underline">← Back to Down Home Disposal</a>
+  {' | '}
+  <a href="/service-areas" className="underline hover:no-underline">View All Service Areas</a>
+</p>
+```
+
+**File:** `app/williamson-county-trash-pickup/page.tsx`
+
+Same addition:
+
+```tsx
+<p className="mt-6 text-sm opacity-75">
+  <a href="/" className="underline hover:no-underline">← Back to Down Home Disposal</a>
+  {' | '}
+  <a href="/service-areas" className="underline hover:no-underline">View All Service Areas</a>
+</p>
+```
+
+---
+
+## 5. Update llms.txt with New Pages
+
+**File:** `app/llms.txt/route.ts` (or `public/llms.txt`)
+
+Add the new location pages:
+
+```
+## Location Pages
+- Franklin TN Garbage Pickup: https://www.downhomedisposal.com/franklin-tn-garbage-pickup
+- Williamson County Trash Pickup: https://www.downhomedisposal.com/williamson-county-trash-pickup
+```
+
+---
+
+## After All Changes
+
+```bash
+# Build to check for errors
+npm run build
+
+# If build succeeds, deploy
+git add .
+git commit -m "Fix Semrush audit issues: page speed, titles, sitemap, internal links"
+git push
+```
+
+---
+
+## Verification Checklist
+
+After deploy, verify:
+
+- [ ] `https://www.downhomedisposal.com/sitemap.xml` shows all 5 pages
+- [ ] Homepage has canonical tag (view source, search for "canonical")
+- [ ] Service Areas page links to both new location pages
+- [ ] Both location pages link back to homepage and service areas
+- [ ] Run PageSpeed Insights on homepage — target mobile score 70+
+- [ ] Re-run Semrush site audit in 24-48 hours
+
+---
+
+## Expected Results After Fixes
+
+| Issue | Before | After |
+|-------|--------|-------|
+| Homepage in sitemap | No | Yes |
+| Homepage canonical | Missing | Present |
+| Page load speed | Flagged | Improved (depends on current setup) |
+| Title length | Too short | Optimal 50-60 chars |
+| Internal linking | Weak | Strong hub-and-spoke |
+| llms.txt | Incomplete | All pages listed |

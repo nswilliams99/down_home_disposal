@@ -79,7 +79,17 @@ export function Footer() {
           <p className="mb-2" data-testid="text-copyright">
             © {currentYear} Down Home Disposal. All rights reserved.
           </p>
-          <p data-testid="text-credit">Website by Trash Joes</p>
+          <p data-testid="text-credit">
+            Website by{" "}
+            <a
+              href="https://www.trashjoes.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors underline"
+            >
+              Trash Joes
+            </a>
+          </p>
         </div>
       </div>
     </footer>
